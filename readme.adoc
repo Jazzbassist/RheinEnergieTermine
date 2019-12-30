@@ -1,0 +1,4 @@
+This tool reads the currently known events in the "RheinEnergieStadium" in Cologne and imports them into a google calendar.
+
+To use the tool, create an API-Token for your google-account by following the steps https://cloud.google.com/docs/authentication/production[on this page] under "Creating a service account".
+Save the resulting `credentials.json`-file in this directory, then run `Rheinenergietermine.rb`. Most likely you will have to manually copy the contents from https://www.koelnersportstaetten.de/die-naechsten-termine/[here] into the `webcontents`-file first, as their currently seems to be an issue with the SSL-certificate of the site in ruby.
